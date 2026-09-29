@@ -1,0 +1,28 @@
+schema_version = "1.0.0"
+
+id = "import_xyz_molecule"
+version = "2.2.0"
+name = "XYZ Molecule Importer"
+tagline = "Import .xyz/extxyz structures and trajectories as molecules"
+maintainer = "Amogh Kinikar"
+type = "add-on"
+
+website = "https://github.com/amoghkinikar/import_xyz_molecule"
+
+tags = ["Import-Export", "Geometry Nodes"]
+
+blender_version_min = "5.1.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2026 Amogh Kinikar"]
+
+[permissions]
+files = "Read structure files and save rendered figures"
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "/.git/",
+  "/tests/",
+  "*.zip",
+]
